@@ -19,6 +19,7 @@ body{
     padding: 0;
     background-image: linear-gradient(180deg, #0099ff, #ffcc00);
     color: white;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -32,6 +33,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
 }
 
 header img{
@@ -42,14 +44,14 @@ header img{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
     top: 10em;
 }
 
 #clock{
-    display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    width: 300px;
+    height: 300px;
 }
 
 #tijd{
@@ -64,7 +66,6 @@ header img{
 
 #welkomBericht{
     text-align: center;
-    font-size: 40px;
 }
 
 #zon{
@@ -81,7 +82,6 @@ header img{
 }
 
 #wolken{
-    max-width: 100%;
     margin-left: -24em;
     z-index: 99;
     position: absolute;

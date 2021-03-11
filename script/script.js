@@ -64,15 +64,14 @@ function welkomsBericht(){
     var uren = date.getHours();
     // var welkomBericht = document.getElementById('welkomBericht');
     var message;
-    console.log(uren);
 
-    if(uren >5 && uren < 12){
+    if(uren > 5 && uren < 12){
         message = 'Goede morgen!';
     }
-    if(uren > 12 && uren < 18){
+    if(uren == 12 && uren < 17){
         message = 'Goede middag!';
     }
-    if(uren > 18 && uren < 24){
+    if(uren == 18 && uren < 24){
         message = 'Goede avond!';
     }
 

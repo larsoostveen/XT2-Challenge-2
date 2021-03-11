@@ -1,0 +1,108 @@
+@font-face{
+    font-family: 'D-DINCondensed';
+    src: url(../font/D-DINCondensed.otf);
+}
+  
+html{
+    box-sizing: border-box;
+}
+  
+*, 
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+  
+body{
+    font-family: 'D-DINCondensed';
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(180deg, #0099ff, #ffcc00);
+    color: white;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header, .main{
+    padding: 0.2em 1em;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+header img{
+    max-width: 90%;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10em;
+}
+
+#clock{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+#tijd{
+    margin-top: 2em;
+    font-size: 60px;
+}
+
+#datum{
+    font-size: 25px;
+    margin-top: -1em;
+}
+
+#welkomBericht{
+    text-align: center;
+}
+
+#zon{
+    margin-top: -80%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0%;
+    z-index: 999;
+    animation-name: zon;
+    animation-duration: 15s;
+    animation-delay: 10s;  
+    animation-fill-mode: forwards;
+}
+
+#wolken{
+    left: ;
+    max-width: 100%;
+    margin-top: ;
+    margin-left: -24em;
+    z-index: 99;
+    position: absolute;
+    animation-name: wolken;
+    animation-duration: 28s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wolken {
+    0%   {left:0px; top:0px;}
+    100%  {left:600px; top:0px;}
+  
+  }
+
+  @keyframes zon {
+    0%   {left:0px; top:0px;}
+    100%  {left:0px; margin-top:1em; animation-timing-function: ease-in-out;}
+  
+  }

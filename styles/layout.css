@@ -1,0 +1,15 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main";
+}
+
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+}

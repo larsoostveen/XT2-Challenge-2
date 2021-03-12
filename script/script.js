@@ -39,7 +39,6 @@ function initDate(){
 function welkomsBericht(){
     date = new Date();
     var uren = date.getHours();
-    // var welkomBericht = document.getElementById('welkomBericht');
     var message;
 
     if(uren > 5 && uren < 12){

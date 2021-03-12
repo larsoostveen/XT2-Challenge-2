@@ -21,8 +21,27 @@ body{
     color: white;
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 200% 200%;
     background-position: center;
+    -webkit-animation: achtergrond 18s ease-in-out infinite;
+    -moz-animation: achtergrond 18s ease-in-out infinite;
+    animation: achtergrond 18s ease-in-out infinite;
+}
+
+@-webkit-keyframes achtergrond {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
+}
+@-moz-keyframes achtergrond {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
+}
+@keyframes achtergrond {
+    0%{background-position:56% 0%}
+    50%{background-position:45% 100%}
+    100%{background-position:56% 0%}
 }
 
 .header, .main{
@@ -75,7 +94,7 @@ header img{
     height: 100%;
     position: relative;
     left: 0%;
-    z-index: 999;
+    z-index: 9;
     animation-name: zon;
     animation-duration: 15s;
     animation-delay: 10s;  
@@ -103,4 +122,49 @@ header img{
     0%   {left:0px; top:0px;}
     100%  {left:0px; margin-top:1em; animation-timing-function: ease-in-out;}
   
+  }
+
+
+  @media only screen and (min-width: 601px){
+    main{
+        margin-left: 12em;
+        margin-top: 6em;
+    }
+
+    #wolken{
+        margin-left: -44em;
+        animation-duration: 35s;
+    }
+
+    @keyframes zon {
+        0%   {left:0px; top:0px;}
+        100%  {left:0px; margin-top:-10em; animation-timing-function: ease-in-out;}
+      
+      }
+  }
+
+  @media only screen and (min-width: 1200px){
+    main{
+        margin-left: 33em;
+        margin-top: 2em;
+    }
+
+    #wolken{
+        margin-left: -55em;
+        animation-duration: 45s;
+    }
+
+    @keyframes wolken {
+        0%   {left:0px; top:0px;}
+        100%  {left:1000px; top:0px;}
+      
+      }
+
+    @keyframes zon {
+        0%   {left:0px; top:0px;}
+        100%  {left:0px; margin-top:-15em; animation-timing-function: ease-in-out;}
+      
+      }
+
+
   }

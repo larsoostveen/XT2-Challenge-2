@@ -1,26 +1,3 @@
-// var d = new Date();
-
-//  var time = d.getHours();
-
- 
-//  if (time < 12) {
-//   alert("Good morning");
-
-//  }
-
-//  if ((time >= 12) && (time < 18)) {
-
-//  alert("Good Afternoon");
-
-// }
-
-             
-
-// if ((time >= 18) && (time < 24)) {
-
-//   alert("Good Evening");
-// }
-
 function initClock(){
     var clock = document.getElementById('tijd');
     var time = getCurrentTime(new Date());

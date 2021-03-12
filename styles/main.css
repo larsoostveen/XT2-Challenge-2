@@ -131,6 +131,11 @@ header img{
         margin-top: 6em;
     }
 
+    #zon{
+        height: 30%;
+        width: 50%;
+    }
+
     #wolken{
         margin-left: -44em;
         animation-duration: 35s;
@@ -138,7 +143,7 @@ header img{
 
     @keyframes zon {
         0%   {left:0px; top:0px;}
-        100%  {left:0px; margin-top:-10em; animation-timing-function: ease-in-out;}
+        100%  {left:0px; margin-top:0em; animation-timing-function: ease-in-out;}
       
       }
   }
@@ -147,6 +152,11 @@ header img{
     main{
         margin-left: 33em;
         margin-top: 2em;
+    }
+
+    #zon{
+        height: 30%;
+        width: 50%;
     }
 
     #wolken{
@@ -162,7 +172,7 @@ header img{
 
     @keyframes zon {
         0%   {left:0px; top:0px;}
-        100%  {left:0px; margin-top:-15em; animation-timing-function: ease-in-out;}
+        100%  {left:5em; margin-top:0em; animation-timing-function: ease-in-out;}
       
       }
 

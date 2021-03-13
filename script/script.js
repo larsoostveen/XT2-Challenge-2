@@ -49,9 +49,8 @@ function welkomsBericht(){
     if(uren >= 12 && uren <= 18){
         message = 'Goede middag!';
 
-
     }
-    if(uren == 18 && uren < 24){
+    if(uren > 18 && uren < 24){
         message = 'Goede avond!';
     }
 

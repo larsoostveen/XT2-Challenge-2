@@ -40,12 +40,16 @@ function welkomsBericht(){
     date = new Date();
     var uren = date.getHours();
     var message;
+    console.log(uren);
+
 
     if(uren > 5 && uren < 12){
         message = 'Goede morgen!';
     }
-    if(uren == 12 && uren < 17){
+    if(uren >= 12 && uren <= 18){
         message = 'Goede middag!';
+
+
     }
     if(uren == 18 && uren < 24){
         message = 'Goede avond!';

@@ -54,6 +54,10 @@ function welkomsBericht(){
         message = 'Goede avond!';
     }
 
+    if(uren > 0 && uren < 5){
+        message = 'Goede nacht!';
+    }
+
     document.getElementById('welkomBericht').innerHTML =  '<h1>' + message + '</h1>';
 }
 
